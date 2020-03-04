@@ -3,8 +3,10 @@ def oxford_comma(array)
   array.pop
   array.push("and "+last_item)
   
-  return array * ", "
-  
+  if array.size >2
+    return array * ", "
+  else
+    return array
   
   
     
